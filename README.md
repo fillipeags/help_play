@@ -15,7 +15,7 @@ This project was build with the stack below:
 Cloning:
 
 ```bash
-$ git clone https://github.com/fillipeags/letmeask.git
+$ git clone https://github.com/fillipeags/help_play.git
 $ cd help_play
 ```
 
