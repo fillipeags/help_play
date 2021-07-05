@@ -51,8 +51,8 @@ export function Home() {
       <div id="page-auth">
         <aside>
           <img src={illlustrationImg} alt="Ilustração Simbolizando perguntas e respostas" />
-          <strong>Crie salas de Q&amp;A ao vivo</strong>
-          <p>Tire as dúvidas da sua audiência em tempo-real</p>
+          <strong>Create Q&amp;A Rooms for Help in Games</strong>
+          <p>Ask and get help from people that played your current game</p>
         </aside>
 
         <main>
@@ -60,17 +60,17 @@ export function Home() {
             <img src={logoImg} alt="Letmeask" />
             <button onClick={handleCreateRoom} className="create-room">
               <img src={googleIconImg} alt="Logo do google" />
-              Crie sua sala com o Google
+              Create Room with Google
             </button>
-            <div className="separator">ou entre em uma sala</div>
+            <div className="separator">or join an existing room</div>
             <form onSubmit={handleJoinRoom}>
               <input
                 type="text"
-                placeholder="Digite o código sa sala"
+                placeholder="Type your room code in here..."
                 onChange={event => setRoomCode(event.target.value)}
                 value={roomCode}
               />
-              <Button type="submit">Entrar na sala</Button>
+              <Button type="submit">Join Room</Button>
             </form>
           </div>
         </main>

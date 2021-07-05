@@ -59,15 +59,15 @@ export function AdminRoom() {
           <img src={logoImg} alt="Letmeask" />
           <div>
             <RoomCode code={roomId} />
-            <Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
+            <Button isOutlined onClick={handleEndRoom}>Close Room</Button>
           </div>
         </div>
       </header>
 
       <main>
         <div className="room-title">
-          <h1>Sala {title}</h1>
-          {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
+          <h1>Game: {title}</h1>
+          {questions.length > 0 && <span>{questions.length} question(s)</span>}
         </div>
 
         <div className="question-list">

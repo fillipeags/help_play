@@ -6,7 +6,7 @@
   aside {
     flex: 7;
 
-    background: #835afd;
+    background: #FF6B00;
     color: #fff;;
 
     display: flex;
@@ -16,17 +16,17 @@
     padding:120px 80px;
 
     img {
-      max-width: 320px;
+      max-width: 620px;
     }
 
     strong {
       font: 700 36px 'Poppins', sans-serif;
       line-height: 42px;
-      margin-top: 16px;
+      margin-top: 40px;
     }
 
     p {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 32px;
       margin-top: 16px;
       color: #f8f8f8;
@@ -43,11 +43,11 @@
     justify-content: center;
   }
 
-  .main-content { 
+  .main-content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 320px;
+    max-width: 420px;
     align-items: stretch;
     text-align: center;
 
@@ -85,7 +85,7 @@
       margin-top: 16px;
 
       a {
-        color: #e559f9;
+        color: #FF6B00;
       }
     }
   }
@@ -96,6 +96,8 @@
     border-radius: 8px;
     font-weight: 500;
     background: #ea4335;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
     color: #fff;
 
     display: flex;
@@ -106,13 +108,16 @@
     border: 0;
 
     transition: filter 0.2s;
+    transition: ease-in-out 0.2s;
 
     img {
       margin-right: 8px;
     }
 
     &:hover{
-      filter: brightness(0.9)
+      filter: brightness(0.9);
+      transform: scale(1.05);
+      transition: ease-in-out 0.2s;
     }
   }
 

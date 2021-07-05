@@ -70,13 +70,13 @@ export function Room() {
 
       <main>
         <div className="room-title">
-          <h1>Sala {title}</h1>
-          {questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
+          <h1>Game: {title}</h1>
+          {questions.length > 0 && <span>{questions.length} question(s)</span>}
         </div>
 
         <form onSubmit={handleSendQuestion}>
           <textarea
-            placeholder="O que você quer perguntar?"
+            placeholder="What you want help for ?"
             onChange={event => setNewQuestion(event.target.value)}
             value={newQuestion}
           />
@@ -88,9 +88,9 @@ export function Room() {
                 <span>{user.name}</span>
               </div>
             ) : (
-              <span>Para enviar uma pergunta, <button>faça seu login</button>.</span>
+              <span>To send you question, <button>log-in first</button>.</span>
             )}
-            <Button type="submit" disabled={!user}>Enviar pergunta </Button>
+            <Button type="submit" disabled={!user}>Send Question </Button>
           </div>
         </form>
 
